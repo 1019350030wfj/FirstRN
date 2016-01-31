@@ -26,6 +26,15 @@ var {
 
 
 // var Route = require('./NativeModuleTest/JaydenTestModule.android');
- var Route = require('./NativeModuleTest/JaydenWebView.android');
+ // var Route = require('./NativeModuleTest/JaydenWebView.android');
 
+ // var Route = require('./UIExplore/ListViewWithSectionHeader.android');
+  // var Route = require('./UIExplore/ImageExample.android');
+  // var Route = require('./jqq/textinput/TestTextInput.js');
+
+  // var Route = require('./jqq/progressbar/TestProgressbar.android');
+
+  //import Route from './jqq/scrollview/TestScrollView.android';
+//import Route from './jqq/switchandpicker/TestSwitch.android';
+var Route = require('./jqq/switchandpicker/TestSP.android');
 AppRegistry.registerComponent('FirstRN', () => Route);
