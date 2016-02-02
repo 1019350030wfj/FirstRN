@@ -36,5 +36,9 @@ var {
 
   //import Route from './jqq/scrollview/TestScrollView.android';
 //import Route from './jqq/switchandpicker/TestSwitch.android';
-var Route = require('./jqq/switchandpicker/TestSP.android');
+//var Route = require('./jqq/switchandpicker/TestSP.android');
+
+var Route = require('./jqq/viewpager/ViewPagerAndroid.android');
+
 AppRegistry.registerComponent('FirstRN', () => Route);
+
