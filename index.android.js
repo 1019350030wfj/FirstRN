@@ -38,7 +38,9 @@ var {
 //import Route from './jqq/switchandpicker/TestSwitch.android';
 //var Route = require('./jqq/switchandpicker/TestSP.android');
 
-var Route = require('./jqq/viewpager/ViewPagerAndroid.android');
+//var Route = require('./jqq/viewpager/ViewPagerAndroid.android');
+
+import Route from './testproject/nba/root'
 
 AppRegistry.registerComponent('FirstRN', () => Route);
 

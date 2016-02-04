@@ -11,25 +11,26 @@ import React, {
 	Platform,
 } from 'react-native'
 
-import GameDetail from './GameDetail'
-teamMap from '../../utils/team-map'
+//import GameDetail from './GameDetail'
+import teamMap from '../../utils/team-map'
 
 export default class GamePanel extends Component {
 
    onPressRow () {
-    const {navigator, game, date, actions} = this.props
-    if (game.type !== 'unstart') {
-      actions.toNavigation('gameDetail')
-        .then(() => {
-          navigator.push(Object.assign({}, {
-            name: 'GameDetail',
-            component: GameDetail,
-            game,
-            date
-          }))
-        })
-        .catch(err => console.error(err))
-    }
+    //const {navigator, game, date, actions} = this.props
+    //if (game.type !== 'unstart') {
+    //  actions.toNavigation('gameDetail')
+    //    .then(() => {
+    //      navigator.push(Object.assign({}, {
+    //        name: 'GameDetail',
+    //        component: GameDetail,
+    //        game,
+    //        date
+    //      }))
+    //    })
+    //    .catch(err => console.error(err))
+    //}
+     console.log("onPressRow")
   }
 
   render () {
