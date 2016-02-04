@@ -6,6 +6,7 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "moment-timezone": "^0.5.0",
     "react-native": "^0.19.0",
     "react-native-gifted-listview": "0.0.10",
     "react-native-icons": "^0.7.0",
