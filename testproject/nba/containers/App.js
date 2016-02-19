@@ -17,13 +17,13 @@ import Game from './Game'
 
 export default class App extends Component {
 	// 构造
-	  constructor(props) {
-	    super(props);
-	    // 初始状态
-	    this.state = {
-			tab: null
-		};
-	  }
+  constructor(props) {
+    super(props);
+    // 初始状态
+    this.state = {
+		tab: null
+	};
+  }
 
 	//在任意时刻，组件的props都可以通过父组件来更改
 	componentWillReceiveProps(props) {
