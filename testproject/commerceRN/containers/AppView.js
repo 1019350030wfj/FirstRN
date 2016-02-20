@@ -27,6 +27,7 @@ import {
 import actionCreators from '../actions'
 import styles from '../assets/styles'
 
+// 哪些 Redux 全局的 state 是我们组件想要通过 props 获取的？
 const mapStateTopProps = state => {
     const id = state.appReducer.get('currentMenuId')
     let newsList = state.appReducer.get('newsList_'+id)
@@ -44,6 +45,7 @@ const mapStateTopProps = state => {
     }
 }
 
+// 哪些 action 创建函数是我们想要通过 props 获取的？
 const mapDispatchToProps = dispatch => {
     return {
         actions:bindActionCreators(actionCreators,dispatch)

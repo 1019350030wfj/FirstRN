@@ -6,7 +6,7 @@
 import React, {
     View,
     Text,
-    Imagek,
+    Image,
     Component,
     TouchableOpacity
 } from 'react-native'
