@@ -104,7 +104,11 @@ class AppView extends Component {
                     }
                 >
                 <View style={styles.container}>
-                    <Header />
+                    <Header
+                        openDrawer={this.openDrawer.bind(this)}
+                        currentMenuId = {this.props.currentMenuId}
+                        menuItems = {this.props.menuItems}
+                    />
                     <ScrollView
                         refreshControl={
                             <RefreshControl
