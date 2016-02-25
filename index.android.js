@@ -7,9 +7,6 @@
 var React = require('react-native');
 var {
   AppRegistry,
-  StyleSheet,
-  Text,
-  View,
 } = React;
 
 // var Route = require('./src/components/Routes.android');
@@ -40,7 +37,8 @@ var {
 
 //var Route = require('./jqq/viewpager/ViewPagerAndroid.android');
 
-import Route from './testproject/nba/root'
+//import Route from './testproject/nba/root'
+import Route from './testproject/commerceRN/root'
 
 AppRegistry.registerComponent('FirstRN', () => Route);
 
