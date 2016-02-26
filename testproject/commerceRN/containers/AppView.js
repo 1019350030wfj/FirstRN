@@ -13,7 +13,7 @@ import React, {
     ScrollView,
     RefreshControl,
 } from 'react-native'
-import {connect} from 'react-redux/native'
+import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import Drawer from 'react-native-drawer'
 
@@ -98,7 +98,7 @@ class AppView extends Component {
                 tapToClose={true}
                 content={
                     <DrawerContent
-                        currentMenuId = {tthis.props.currentMenuId}
+                        currentMenuId = {this.props.currentMenuId}
                         menuItems = {this.props.menuItems}
                         closeDrawer={this.closeDrawer.bind(this)}
                         setCurrentMenuId = {this.props.actions.setCurrentMenuId}

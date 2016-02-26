@@ -5,7 +5,7 @@
 
 'use strict'
 
-import {
+import React, {
     Navigator,
 } from 'react-native'
 
@@ -14,26 +14,25 @@ import {
     applyMiddleware
 } from 'redux'
 import thunk from 'redux-thunk'
-import {Provider} from 'react-redux/native'
-import APPView from './containers/AppView'
+import {Provider} from 'react-redux'
+import AppView from './containers/AppView'
 import reducers from './reducers'
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore)
 const store = createStoreWithMiddleware(reducers)
 
 export default class Root extends React.Component {
-    render() {
-        <Provider store={store}>
-            {
-                () => <Navigator
-                    initialRoute={{name:'首页',index:0,component:APPView}}
-                    renderScene={(route,navigator) => {
-                            const Component = route.component
-                            return <Component route={route} navigator={navigator}/>
-                        }
-                    }
-                    />
-            }
-        </Provider>
+    render(){
+        return(
+            <Provider store={store}>
+                <Navigator
+                    initialRoute={{name:'首页', index:0, component:AppView}}
+                    renderScene={(route, navigator)=>{
+                        const Component = route.component;
+                        return <Component route={route} navigator={navigator}/>
+                      }}
+                />
+            </Provider>
+    );
     }
 }
