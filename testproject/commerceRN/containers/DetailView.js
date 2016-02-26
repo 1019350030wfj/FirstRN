@@ -8,7 +8,7 @@ import React, {
     Component,
     WebView,
 } from 'react-native'
-import {connect} from 'react-redux/native'
+import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actionCreators from '../actions'
 
