@@ -38,7 +38,10 @@ var {
 //var Route = require('./jqq/viewpager/ViewPagerAndroid.android');
 
 //import Route from './testproject/nba/root'
-import Route from './testproject/commerceRN/root'
+//import Route from './testproject/commerceRN/root'
 
+//import Route from './jqq/webview/Webview.android'
+//import Route from './jqq/button/CustomButton.android'
+import Route from './jqq/navigator/NavigatorTest.android'
 AppRegistry.registerComponent('FirstRN', () => Route);
 
