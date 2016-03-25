@@ -40,8 +40,13 @@ var {
 //import Route from './testproject/nba/root'
 //import Route from './testproject/commerceRN/root'
 
+
 //import Route from './jqq/webview/Webview.android'
 //import Route from './jqq/button/CustomButton.android'
-import Route from './jqq/navigator/NavigatorTest.android'
+//import Route from './jqq/navigator/NavigatorTest.android'
+//import Route from './jqq/alert/TestAlert.android'
+//import Route from './jqq/appstate/TestAppState.android'
+//import Route from './jqq/netinfo/TestNetinfo.android'
+import Route from './jqq/clipboard/TestClipBoard.android'
 AppRegistry.registerComponent('FirstRN', () => Route);
 
