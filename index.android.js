@@ -47,6 +47,18 @@ var {
 //import Route from './jqq/alert/TestAlert.android'
 //import Route from './jqq/appstate/TestAppState.android'
 //import Route from './jqq/netinfo/TestNetinfo.android'
-import Route from './jqq/clipboard/TestClipBoard.android'
+//import Route from './jqq/clipboard/TestClipBoard.android'
+
+//import Route from './jqq/asyncstorage/TestAsynstorage.android'
+
+//import Route from './jqq/backandroid/TestBackAndroid.android'
+
+//import Route from './jqq/datepicker/TestDatePickAndroid.android'
+
+//import Route from './jqq/statusbar/TestStatusBar.android';
+
+import Route from './jqq/timepicker/TestTimePicker.android'
+
+
 AppRegistry.registerComponent('FirstRN', () => Route);
 
