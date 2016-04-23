@@ -25,6 +25,7 @@ export default class ButtonCuston extends Component {
 const styles = StyleSheet.create({
     button: {
         backgroundColor: 'white',
+        alignSelf:'center',
         margin:10,
         padding:15,
         borderBottomColor:'#cdcdcd',

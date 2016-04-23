@@ -57,7 +57,13 @@ var {
 
 //import Route from './jqq/statusbar/TestStatusBar.android';
 
-import Route from './jqq/timepicker/TestTimePicker.android'
+//import Route from './jqq/timepicker/TestTimePicker.android'
+
+//import Route from './jqq/vibration/TestVirbration.android'
+
+//import Route from './jqq/imagebackground/TestImageBack.android'
+
+import Route from './testproject/lagou/app-registery'
 
 
 AppRegistry.registerComponent('FirstRN', () => Route);
