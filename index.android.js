@@ -63,8 +63,6 @@ var {
 
 //import Route from './jqq/imagebackground/TestImageBack.android'
 
-import Route from './testproject/lagou/app-registery'
-
 
 AppRegistry.registerComponent('FirstRN', () => Route);
 
