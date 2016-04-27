@@ -64,7 +64,10 @@ export default class FramePage extends Component {
 
     itemPress(tag) {
         console.log("item Press " + tag);
-        this.setState({selectedTab:tag});
+        this.setState({
+            selectedTab:tag
+        });
+        this.render.bind(this);
     }
 
     _renderTabItem(img,selectedImg,tag,title,badgeCount,childView) {

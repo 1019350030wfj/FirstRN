@@ -5,14 +5,27 @@ import React, {
     StyleSheet,
     Text,
     View,
+    Navigator,
 } from 'react-native';
+
+import Home from './home/home';
 
 export default class RouteHome extends Component {
     render() {
+        let defaultName = 'Home';
+        let defaultComponent = Home;
+
         return(
-            <View style = {{flex:1}}>
-                <Text>首页</Text>
-            </View>
+            <Navigator
+                initialRoute = {{name:defaultName,component:defaultComponent}}
+                configureScene = {(route) => {
+                    return Navigator.SceneConfigs.HorizontalSwipeJump;
+                }}
+                renderScene = {(route,navigator) => {
+                    let Component = route.component;
+                    return <Component {...route.params} navigator={navigator}/>
+                }}
+            />
         );
     }
 }
