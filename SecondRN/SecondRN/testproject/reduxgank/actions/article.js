@@ -1,6 +1,6 @@
 import * as types from '../constants/ActionTypes'
 
-export default function fetchArticles(category = 'Android',index = 1,isLoadMore,nowRead) {
+export function fetchArticles(category = 'Android',index = 1,isLoadMore,nowRead) {
     return dispatch => {
         if (!isLoadMore) {
             dispatch(fetchArticleList(category));
