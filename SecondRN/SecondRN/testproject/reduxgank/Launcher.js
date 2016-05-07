@@ -19,7 +19,10 @@ const store = configureStore();
     A、<Provider>组件：这个组件需要包裹在整个组件树的最外层，
     作用：让根组件的所有子孙组件能够轻松的使用connect（）方法绑定到store
 
-    B、connect(): 这是react-redux提供的一个方法。
+    Provider组件里绑定的整个App唯一的store，以及里面的reducer，就是这个样子而已
+
+
+ B、connect(): 这是react-redux提供的一个方法。
     如果一个组件想要响应状态的变化，就把自己作为参数传给connect（）
     的结果
 

@@ -9,6 +9,7 @@ import React, {
 
 //import SecondRN from './testproject/lagou/app-registery';
 //import SecondRN from './testproject/gank/Gank';
-import SecondRN from './testproject/reduxgank/Launcher';
+//import SecondRN from './testproject/reduxgank/Launcher';
+import SecondRN from './testapi/animated/TestAnimated.android';
 
 AppRegistry.registerComponent('SecondRN', () => SecondRN);
